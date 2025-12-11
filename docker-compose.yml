@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: mindoc-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist data (ChromaDB, uploads) so it survives container restarts
+      - ./backend/data:/app/data
+    environment:
+      - ALLOW_ORIGINS=http://localhost:5173,http://localhost:3000,http://localhost
+    restart: always
+
+  frontend:
+    build: ./frontend
+    container_name: mindoc-frontend
+    ports:
+      - "80:80" # Serve frontend on localhost port 80
+    depends_on:
+      - backend
+    restart: always
