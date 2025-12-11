@@ -1,7 +1,7 @@
 # 🧠 Mindoc — Private Offline RAG Assistant
 
-Mindoc is a **fully offline, privacy-first AI assistant** that lets you **chat with your PDFs and PPTs** — without internet, API keys, or cloud services.  
-Everything runs **entirely on your local CPU** using Small Language Models (SLMs).
+Mindoc is a privacy-focused, fully offline AI assistant that allows you to search and chat with your PDFs and PPTs locally.
+No cloud, no API keys — everything runs 100% on your device using efficient Small Language Models (SLMs).
 
 ---
 
