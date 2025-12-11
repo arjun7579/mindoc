@@ -1,0 +1,7 @@
+# Chroma Vector Database Folder
+
+This directory will store the persistent ChromaDB index:
+- Embeddings (parquet files)
+- Document chunks
+- Metadata (page numbers, filenames)
+- SQLite index files
