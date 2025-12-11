@@ -1,0 +1,8 @@
+__pycache__
+venv
+.env
+.git
+.gitignore
+data/chroma
+data/uploads
+# Keep models in context only if you aren't redownloading them every time, 
