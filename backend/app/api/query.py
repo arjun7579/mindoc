@@ -5,9 +5,7 @@ router = APIRouter()
 
 @router.get("/query")
 async def query_documents(q: str, mode: str = "quick"):
-    """
-    Accepts ?q=...&mode=quick OR ?q=...&mode=deep
-    """
+
     if not q:
         raise HTTPException(status_code=400, detail="Query cannot be empty")
         
